@@ -1,0 +1,16 @@
+<div class="container">
+<div class="container-fluid">
+  <div class="row">
+    <app-gamecontrol
+    (gameStarted)="addedNumber($event)" >
+  </app-gamecontrol>
+  </div>
+  <!-- <div class="row" *ngFor="let num of arrOfNumbers"> -->
+    <!-- <app-evennumber *ngIf="num%2==0" [number]="num"></app-evennumber>
+    <app-oddnumber *ngIf="num%2!=0" [number]="num"></app-oddnumber> -->
+    <div>
+    <app-evennumber *ngFor="let element of arrOfEvenNumbers" [number]="element"></app-evennumber>
+    <app-oddnumber *ngFor="let element of arrOfOddNumbers" [number]="element"></app-oddnumber>
+  </div>
+</div>
+</div>
